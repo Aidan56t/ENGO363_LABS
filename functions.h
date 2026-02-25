@@ -1,0 +1,8 @@
+//
+// Created by ltran on 2026-02-25.
+//
+
+#ifndef ENGO363_LABS_FUNCTIONS_H
+#define ENGO363_LABS_FUNCTIONS_H
+
+#endif //ENGO363_LABS_FUNCTIONS_H

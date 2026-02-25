@@ -1,18 +1,28 @@
-#include <iostream>
+/* ------------ Lab 3: Conditional least squares adjustment -----------
+main.cpp written for ENGO 363 - Estimation and Statistical Testing
+Written by Aidan Tran on Mar 10th, 2026
+-----------------------------------------------------------------------------------------------*/
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+//---------------- Setup ------------------------------
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <vector>
+#include <fstream>
+#include <algorithm>
+#include "functions.h"
+#include <Eigen/Dense>
+#include <cmath>
+
+using namespace std;
+using namespace Eigen;
+
+
+
+//---------------- Main ------------------------------
+
 int main()
 {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the <b>lang</b> variable name to see how CLion can help you rename it.
-    auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
-
-    for (int i = 1; i <= 5; i++)
-    {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
-    }
-
     return 0;
-    // TIP See CLion help at <a href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>. Also, you can try interactive lessons for CLion by selecting 'Help | Learn IDE Features' from the main menu.
 }
