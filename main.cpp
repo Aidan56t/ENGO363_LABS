@@ -40,7 +40,7 @@ int main()
     9)
     */
 
-    vector<string> l = {"h2_1","h3_2","h4_3"};
+    vector<string> lNames = {"h2_1","h3_2","h4_3"};
 
     MatrixXd B(9,20);
     B.row(0) << 1,0,0,0,0, 0,0,1,0,1, -1,0,0,0,0, 0,0,0,0,0;
@@ -53,7 +53,11 @@ int main()
     B.row(7) << 0,0,0,0,0, 0,-1,0,0,0, 0,0,0,0,0, -1,1,0,0,0;
     B.row(8) << 0,0,0,0,-1, 0,0,0,0,0, 0,0,0,0,0, 0,-1,1,0,0;
 
+    MatrixXd l = readToMat("dhs_2026.txt");
 
+    MatrixXd w = B*l;
+
+    cout << w;
 
     return 0;
 }
