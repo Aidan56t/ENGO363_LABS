@@ -23,6 +23,7 @@ using namespace Eigen;
 
 int main()
 {
+    //================================TASK 1==========================================
     /*Identify number of observations and unknowns
     n = 20
     u = 11
@@ -68,6 +69,14 @@ int main()
     }
 
     MatrixXd P = Cl.inverse();
+
+    //---------------------------FINDING VCAP---------------------------
+    MatrixXd M = B*P.inverse()*B.transpose();
+
+    MatrixXd kHat = M.inverse()*w;
+
+    MatrixXd vCap = -P.inverse()*B.transpose()*kHat;
+
 
     return 0;
 }
