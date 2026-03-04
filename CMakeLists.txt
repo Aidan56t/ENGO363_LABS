@@ -18,7 +18,7 @@ endif()
 # ======================================
 # The name of your project and .sln file. I.e if you named your project as ENGO_363_Lab3, replace that here.
 
-project("Lab_3")
+project("ENGO363_LABS")
 
 # ======================================
 # === CAN EDIT: Name of your Project ===
@@ -54,15 +54,15 @@ FetchContent_MakeAvailable(Eigen)
 # For the un-"quoted" Lab_3, this sets what your .exe file becomes, so can technically be anything really.
 # It is a good idea for it to match your project name.
 
-add_executable(Lab_3
+add_executable(ENGO363_LABS
         "main.cpp"
         functions.cpp
         functions.h
 )
 
 # The Lab_3 part should match whatever is in the add_executable.
-target_link_libraries(Lab_3 PRIVATE Eigen3::Eigen)
-set_property(TARGET Lab_3 PROPERTY CXX_STANDARD 20)
+target_link_libraries(ENGO363_LABS PRIVATE Eigen3::Eigen)
+set_property(TARGET ENGO363_LABS PROPERTY CXX_STANDARD 20)
 
 # ======================================
 # === CAN EDIT: ADD YOUR SOURCE FILES ABOVE IN add_executable() ===

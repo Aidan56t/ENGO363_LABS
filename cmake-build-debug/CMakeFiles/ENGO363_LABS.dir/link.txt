@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\ENGO363_LABS.dir/objects.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\ar.exe qc CMakeFiles\ENGO363_LABS.dir/objects.a @CMakeFiles\ENGO363_LABS.dir\objects1.rsp
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\ENGO363_LABS.dir/objects.a -Wl,--no-whole-archive -o ENGO363_LABS.exe -Wl,--out-implib,libENGO363_LABS.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ENGO363_LABS.dir\linkLibs.rsp
