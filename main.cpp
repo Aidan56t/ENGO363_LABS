@@ -58,7 +58,7 @@ int main()
 
     MatrixXd w = B*l;
 
-    cout << w;
+    //cout << w;
 
     MatrixXd stdevs = readToMat("stdevs_2026.txt");
     MatrixXd Cl(20,20);
@@ -81,6 +81,15 @@ int main()
 
     //----------------------------VCM-------------------------------
     MatrixXd CvCap = P.inverse()*B.transpose()*M.inverse()*B*P.inverse();
+
+    MatrixXd ClCap = Cl - CvCap;
+
+    //---------------------------CHECK---------------------------
+    MatrixXd check = B*lCap;
+
+    cout << check << endl;
+
+    cout << endl << vCap << endl;
 
     return 0;
 }
